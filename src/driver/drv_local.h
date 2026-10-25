@@ -135,6 +135,7 @@ void OWM_AppendInformationToHTTPIndexPage(http_request_t *request, int bPreState
 void DRV_HTTPButtons_ProcessChanges(http_request_t *request);
 void DRV_HTTPButtons_AddToHtmlPage(http_request_t *request);
 void DRV_InitHTTPButtons();
+
 #if ENABLE_HA_DISCOVERY
 void DRV_HTTPButtons_OnHassDiscovery(const char *topic);
 
@@ -369,3 +370,6 @@ void TinyIR_NEC_RunFrame();
 void DRV_ESPHome_API_Init();
 void DRV_ESPHome_API_Deinit();
 void DRV_ESPHome_API_OnEverySecond();
+
+void DRV_Sofar_Init();
+void DRV_Sofar_OnEverySecond();
